@@ -1,0 +1,21 @@
+[package]
+name = "translata"
+description = "Translator assistant via chrome/chromium and web"
+authors = ["Cliff <cliff.hp@gmail.com>"]
+version = "0.1.0"
+edition = "2018"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arboard = "2.0"
+clap = "3.0.0-beta.4"
+env_logger = "0.9"
+failure = "0.1"
+headless_chrome =  { git = "https://github.com/CliffHan/rust-headless-chrome", rev = "a982ddd" }
+#headless_chrome =  { path = "../rust-headless-chrome" }
+hotkey = "0.3"
+log = "0.4"
+strfmt = "0.1.6"
+thiserror = "1.0"
